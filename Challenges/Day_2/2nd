@@ -1,0 +1,33 @@
+#i/bin/bash
+
+echo "Welcome onboard i'm happy to see you here"
+dir=$(pwd)
+
+echo "current directory: $dir"
+
+
+echo "Files:"
+ls -lh
+
+read -p "Enter text: " input
+echo "characeter count: ${#input}"
+
+
+while true; do 
+        echo "------------ FILE 2nd --------------"
+        echo "current dir: $(pwd)"
+        ls -lh
+        echo "-------------------------------------"
+
+        echo "options:"
+        echo "1) Refresh"
+        echo "2) Exit"
+
+        read -p "choose: " choice
+
+    if  [ "$choice" = "2" ]; then
+        echo "Exiting..."
+        break
+    fi 
+    echo ""
+done
